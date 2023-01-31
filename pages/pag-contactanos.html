@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -7,83 +8,142 @@
     <title>Kangoo - Contactanos</title>
     <link rel="Kangoo icon" href="../logo/favicon/icon_e1b1a2434ba53752831d9495a6ae0e4f (2).ico">
 
-    <link rel="stylesheet" href="../css/styleContacto.css">
+    <link rel="stylesheet" href="../css/stylesF.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 </head>
-<body>
-    <header>
-        <a id="logo" title="Kangoo - Home" href="../index.html"><img src="../logo/Logo 1.png" alt="Kangoo"  height="70px" style="border-radius: 30px 6px;"/></a>
-           <section class="busqueda">
-            <label for="buscar"">
-                <img src="../logo/Iconos adiccionales/Buscar.svg" alt="Kangoo"  height="14px" width="14px" />
-            </label>
-            <input type="search" name="" id="buscar" placeholder="Buscar"  style="width: 90%;border-radius: 10px;border: 1px solid rgba(125, 107, 60, 0.945); padding: 2px 12px;"></section>
-            
-        
-            <ul class="usuerAction">
-                <li class="usuario"><a href="../pages/pag-iniciar-seccion.html"><abbr title="Usuario"><img src="../logo/Iconos adiccionales/usuario.ico" alt="Perfil" style="height:35px"  /></abbr></a></li>
-                <li class="misCompras"><a href="../pages/pag-iniciar-seccion.html"><abbr title="Mis compras"><img src="../logo/Iconos adiccionales/Carrito.ico" alt="Carrito" style="height:35px"/></abbr></a></li>
-                <li class="favoritos"><a href="../pages/pag-iniciar-seccion.html"><abbr title="Favoritos"><img src="../logo/Iconos adiccionales/Favorito.ico" alt="Favoritos" style="height:31px;padding: 2px;"/></abbr></a></li>
-            </ul>
-           
-            
-           
-        
-                     
-        <nav>
-            <ul>
-                <li><a href="../index.html">Ropa</a></li>
-                <li><a href="">Ofertas</a></li>
-                <li><a href="">Tendencias</a></li>
-            </ul>   
-        </nav>            
+<body >
+    
+
+    <header class="container-fluid ">
+        <nav class="row navbar navbar-expand-md bg-warning bg-gradient" style="box-shadow: 0 0 6px black;">
+
+                <div class="container-fluid">
+
+                    <div class="col-2 col-sm-2 " >
+                        <a class="m-1" id="logo" title="Kangoo - Home" href="../index.html"><img src="../logo/Logo 1.png" alt="Kangoo"  height="70px" /></a>
+                    </div>
+                    <!-- LOGO -->
+                    <div class="col-7 col-sm-7" >
+                        <div>
+                            <form id="busqueda"  class="d-flex" role="search">
+                                <label for="buscar"> </label>
+                                <input type="search" name="" id="buscar" placeholder="Buscar"  style="width: 90%;border-radius: 10px;border: 1px solid rgba(125, 107, 60, 0.945); padding: 2px 12px;">
+                                <button class="btn btn-outline-secondary mx-1" type="submit">
+                                        <img src="../logo/Iconos adiccionales/Buscar.svg" alt="Kangoo"  height="24px"  />
+                                </button>
+                            </form>
+                        </div>
+                        <div class="mt-2" style="height: 27px;">
+                            <ul id="categorias" class="d-flex justify-content-start list-unstyled ms-4 " >
+                                <li class="rounded-3" ><a class="dropdown-item mx-3" href="../index.html">Ropa</a></li>
+                                <li class="rounded-3"><a class="dropdown-item mx-3" href="">Ofertas</a></li>
+                                <li class="rounded-3"><a class="dropdown-item mx-3" href="">Tendencias</a></li>
+                            </ul>   
+                        </div>
+                    </div>
+                    <!-- bucador -->
+                    
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Boton hambuerguesa -->
+                        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        
+                            <ul class="navbar-nav ms-5 mb-2 ms-md-auto align-items-center">
+                            
+                                <li class="nav-item mx-1 mx-lg-3 mx-xl-5 ">
+                                    <a id="usuario" class="nav-link" aria-current="page" href="../pages/pag-iniciar-seccion.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="35px" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                                        </svg>
+                                        </a></li>
+                                <li class="nav-item me-1">
+                                    <a  id="carrito" class="nav-link" aria-current="page" href="../pages/Pag-iniciar-seccion.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="30px" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                            <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                                        </svg>
+                                    </a>
+                                <li  class="nav-item mx-1 mx-lg-3 mx-xl-5">
+                                        <a id="favorito" class="nav-link" aria-current="page" href="../pages/Pag-iniciar-seccion.html">
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="30" fill="currentColor" class="bi bi-heart-fill p-.5 mb-0" viewBox="0 -1 18 18">
+                                                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                            </svg>
+                                        </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- usuario -->
+                    </div>
+            </nav>    
     </header>
 
 
 
-    <main>
-        
-    
-    <form>
-        <ul>
-            <li><label for="nombre"><b>Nombre competo:</b></label>
-                <input type="text" name="" id="nombre" required placeholder="Nombre y apellido"></li>
-            <li>
-                <label for="correo"><b>Correo electronico:</b></label>
-                <input type="email" name="" id="correo"required placeholder="Email"></li>
-            <li><label for="fecha"><b>Fecha:</b></label>
-                <input type="date" name="" id="fecha" required>
-            </li>
-            <li>
-                    <label for="pais"><b>País:</b></label>
-                    <input type="text" name="" id="pais"required placeholder="Uruguay"></li>
-            <li>
-                <label for="telefono"><b>Telefono:</b></label>
-                <input type="tel" name="" id="telefono" required placeholder="Telefono">
-            </li>
-            <li>
-                <label for="asunto"><b>Asunto:</b></label>
-                <input type="text" name="" id="asunto" required placeholder="Asunto">
-            </li>
-            <li><textarea name="" id="mensaje" cols="66" rows="10" required placeholder="Escriba su mensaje"></textarea></li>
-            <span class="botons">
-            <li class="resset"><input type="reset" value="Borrar todo"></li>
-            <li class="enviar">
-                <input type="button" value="Enviar">
-            </li></span>
-        </ul>
 
-        
-    </form>
-
-
+    <main id="main-contacto" class="body2 ">
+        <div class=" conteiner-fluid pt-3 " >
+        <div class=" col-10 col-sm-8 col-md-6 ms-4   ">
+        <form class="p-3  ">
+            <ul class="list-unstyled">
+                <li><label for="nombre"><b>Nombre competo:</b></label>
+                    <input type="text" name="" id="nombre" required placeholder="Nombre y apellido"></li>
+                <li>
+                    <label for="correo"><b>Correo electronico:</b></label>
+                    <input type="email" name="" id="correo"required placeholder="Email"></li>
+                <li><label for="fecha"><b>Fecha:</b></label>
+                    <input type="date" name="" id="fecha" required>
+                </li>
+                <li>
+                        <label for="pais"><b>País:</b></label>
+                        <input type="text" name="" id="pais"required placeholder="Uruguay"></li>
+                <li>
+                    <label for="telefono"><b>Telefono:</b></label>
+                    <input type="tel" name="" id="telefono" required placeholder="Telefono">
+                </li>
+                <li>
+                    <label for="asunto"><b>Asunto:</b></label>
+                    <input type="text" name="" id="asunto" required placeholder="Asunto">
+                </li>
+                <li><textarea name="" id="mensaje" rows="10" required placeholder="Escriba su mensaje"></textarea></li>
+                <div class="botons row " id="action-contacto">
+                    <li class="resset col-6 d-flex justify-content-center"><input type="reset" value="Borrar todo"></li>
+                    <li class="enviar col-6 d-flex justify-content-center">
+                        <input type="button" value="Enviar">
+                </li></div>
+            </ul>
+        </form>
+    </div>
+</div>
 
     </main>
 
 
-    <footer>
-
-
-    </footer>
     
+
+
+    <footer class="conteiner-fluid  bg-dark text-white" style="height: 60px;">
+        <div class="row h-100 w-100 flex-nowrap col-12 ">
+            <ul class="h-100 col-lg-10 col-md-9 col-sm-8 col-7 ms-5 ms-md-0 d-md-flex align-items-center justify-content-evenly list-unstyled ">
+                <li class="px-0 px-md-2  py-1"><a href="" class="dropdown-item"> Trabaja con nosotros</a></li>
+                <li class="px-0 px-md-2 py-1"><a href="" class="dropdown-item"> Terminos y condiciones</a></li>
+                <li class="px-0 px-md-2 py-1"><a href="" class="dropdown-item"> Ayuda</a></li>
+            </ul>
+            <div id="contacto" class=" col-lg-2 col-md-3 col-1  h-100    d-flex align-items-center justify-content-end ">
+                <a class="dropdown-item px-2 py-1 " href="../pages/pag-contactanos.html">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Contactános
+                </a>
+            </div>
+        </div>
+    </footer>
+  
+<!-- Scrip de boostrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
 </body>
 </html>

@@ -1,139 +1,143 @@
 *{
     margin: 0;
     padding: 0;
+   
 }
 
 
-body{
-    overflow-x: hidden;
+
+@media(max-width: 767px){
+
+
+        #usuario::after {
+        content: "Usuario";
+        }
+        #carrito::after{
+            content: "Carrito";
+        }
+        #favorito::after{
+            content: "Favoritos";
+        }
+
+        #ofertasVerano{
+            height: 40vh !important;
+            background-size: cover !important; 
+            background-position: 0px -95px !important;
+            
+        }
+        body main{
+            height: 130vh !important;
+        }
+        main div section div{
+            height: 30vh !important;
+        }
+        .boton{
+            height: 30vh !important;
+        }
+
+        footer{
+            height: 80px !important;
+        }
+        
+        footer div ul li a{
+            font-size: 13px;
+
+        }
+
 }
 
-body header{
-    width: 100%;
-    height: 85px;
-    background-color: rgba(255, 214, 111, 0.988);
-    margin-bottom: 0px;
-    font-size: 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 1px 5px rgb(114, 114, 114);
+
+@media(max-width:575px){
+        footer{
+            height: 80px !important;
+        }
+
+
+
+}
+
+@media(min-width:520px){
+    #logo img{
+        border-radius: 30px 6px;
     }
-
-                #logo{
-                    position: absolute;
-                    margin: 6px 2%;
-                    border-radius: 30px 6px;
-                    border: rgba(249, 201, 82, 0.975) solid 1px;
-                }
-
-                .busqueda{
-                    position: absolute;
-                    top: 3vh;
-                    right: 320px;
-                    width: 60vw;
-                }
-
-                .usuerAction{
-                    position: absolute;
-                    top: 1vh;
-                    right: 1%;
-                    width: 290px;
-                    height: 53px;
-                    margin: 5px;
-                    padding: 0px;
-                }
-                
-                    .usuario {
-                            display: inline-block;
-                            height: 35px;
-                            width: 40px;
-                            margin: 5px 18px;
-                            padding: 2px 8px;
-                            border-radius: 10px 5px;
-                            border-right: 2px rgba(53, 52, 52, 0.562) solid ;
-                        background-color: rgba(83, 85, 86, 0.051);
-                        text-align: center;
-                        }  
-
-                    .misCompras {
-                            display: inline-block;
-                            height: 35px;
-                            width: 40px;
-                            margin: 5px 18px;
-                            padding: 2px 8px;
-                            border-radius: 10px 5px;
-                            border-right: 2px rgba(53, 52, 52, 0.562) solid ;
-                        background-color: rgba(83, 85, 86, 0.051);
-                        text-align: center;
-                        
-                        }  
-                    .favoritos {
-                            display: inline-block;
-                            height: 35px;
-                            width: 40px;
-                            margin: 5px 18px;
-                            padding: 2px 8px;
-                            border-radius: 10px 5px;
-                            border-right: 2px rgba(53, 52, 52, 0.562) solid ;
-                        background-color: rgba(83, 85, 86, 0.051);
-                        text-align: center;
-                        top: 10px;
-                        }
+}
 
 
 
 
+@media(max-width: 520px){
+    #logo img{
+        height: 60px;
+        border-radius: 30px 6px;
+    }
+    #categorias{
+        margin:0 !important;
+    }
+    #categorias li{
+        margin: 4px 10px !important;
+    }
+    #categorias li a{
+        font-size: 13px;
+}
 
-body header nav{
-    position: relative;
-    top: 50px;
-    left: 18vw;
-    font-size: 16px;
-}       
 
-body header nav ul li{
-    display: inline-block;
-    margin-inline-start: 0;
-    margin-inline: 5px;
-    padding: 2px 12px;
-    border-right: 1px solid rgb(108, 104, 1);
-    border-radius: 4px;
+
+@media(max-width: 450px){
+    #logo img{
+        height: 45px;
+        border-radius: 15px 3px;
+    }
+    #busqueda{
+        height: 30px;
+    }
+    #busqueda button{
+        
+        padding: 2px;
+        border-radius: 10px;
+    }
+    #busqueda button img{
+        padding-bottom: 3px;
+    }
+   
+    }
+}
+
+    /* Navegación */
+
+/* header{
+        height: 15vh;
+    } */
+
+#categorias li:hover{
+    box-shadow: 1px 1px 3px rgba(81, 81, 81, 0.88);
+}
+
+#logo img:hover{
+    box-shadow: 3px 3px 10px rgb(79, 61, 17);
     
 }
-
-body header nav ul li a{    
-    text-decoration: none;
-    color: rgb(77, 74, 2);
-}
-
-body header nav ul li:hover{
-   box-shadow: 1px 1px 3px rgba(81, 81, 81, 0.88);
-
-
+#navbarSupportedContent ul li a:hover{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.723) 0%, rgba(0,241,255,0) 4%);
+    padding-bottom: 1px solid gray;
 }
 
 
+    /* Index */
 
-
-
-
-body main{
-    margin: 0;
-    font-size: 0;
-}
-
-body main section{
-    display: inline-block;
+#main-idex{
+    height: 120vh;
     font-size: 0;
     
+    
+
 }
 
-.ofertasVerano{
+
+
+#ofertasVerano{
     margin: 0;
     background-image: url(../images/summer\ sale.jpg);
-    height: 1050px;
-    width: 40vw;
     background-attachment: fixed;
     background-position: left;
     background-repeat: no-repeat;
@@ -141,113 +145,86 @@ body main section{
       
 }
 
-body main section div{
-    position:absolute ;
-    height: 350px;
-    width: 60vw;
-    
-}
 
-
-            body main section div.mujeres{
-                margin: 0;
-                top: 85px;
-                right: 0;
+            #mujeres{
                 font-size: 1px;
                 background-image: url(../images/Mujer\ modelo.webp);
                 background-position: right top;
                 background-repeat: no-repeat;
                 background-size: cover;   
-                box-shadow: 0 1px 20px rgb(114, 114, 114);
+                box-shadow: 0 1px 10px rgb(0, 0, 0);
             }
 
 
-                        body main section div.mujeres a button{
-                                font-family: 'Lobster', cursive;
-                                font-size: 80px;
-                                color: rgba(125, 123, 123, 0.932);
-                                background: none;
-                                height: 350px;
-                                width: 60vw;
-                                text-align: left;
-                                padding-left: 40px;
-                                padding-top: 180px;
-                                border:none ;
-                                
-                            }
+                        
 
 
 
-            body main section div.hombres{
-                margin: 0;
-                top: 435px;
-                right: 0;
-                font-size: 1px;
+            #hombres{
+                
                 background-image: url(../images/Hombre\ modelo.webp);
                 background-position: right top;
                 background-repeat: no-repeat;
                 background-size: cover;
-                box-shadow: 0 1px 20px rgb(114, 114, 114);
+                box-shadow: 0 1px 10px rgb(0, 0, 0);
 
             }
 
-                        body main section div.hombres a button{
-                            font-family: 'Lobster', cursive;
-                            font-size: 80px;
-                            color:  rgba(70, 68, 68, 0.932);
-                            background: none;
-                            height: 350px;
-                            width: 60vw;
-                            text-align: left;
-                            padding-left: 110px;
-                            padding-top: 85px;
-                            border:none ;
-                        }
+                       
 
 
-            body main section div.ninos{
-                margin: 0;
-                top: 785px;
-                right: 0;
-                font-size: 1px;
+            #ninos{
+                
+                
                 background-image: url(../images/Nino\ modelo.rec.jpg);
                 background-position: right top;
                 background-size: cover;
                 z-index: 50;
-                box-shadow: 0 1px 20px rgb(114, 114, 114);
+                box-shadow: 0 1px 10px rgb(0, 0, 0);
             }
-                    body main section div.ninos a   button{
-                        font-family: 'Lobster', cursive;
-                        font-size: 80px;
-                        color:  rgba(125, 123, 123, 0.932);
-                        background: none;
-                        height: 350px;
-                        width: 60vw;
-                        text-align: left;
-                        padding-left: 110px;
-                        padding-top: 85px;
-                        border:none ;
-                    }
 
+                .boton{
+                    font-family: 'Lobster', cursive;
+                    font-size: 80px;
+                    color: #ffc107;
+                    background: none;
+                    height: 40vh;
+                    width:100%;
+                    /* width: 60vw; */
+                    text-align: left;
+                    text-shadow: 2px 2px 2px black;
+                    padding-left: 3vw;
+                    padding-bottom: 10px;
+                    border:none ;
+                    
+                }
 
+.boton:hover{
+        background: rgb(255,204,16);
+        background: linear-gradient(0deg, rgba(255,204,16,1) 0%, rgba(255,255,255,0.41) 9%);
 
-body main section div a button:hover{
-    background-color: rgba(255, 255, 255, 0.441);
-    color: rgba(73, 72, 72, 0.958);
 }
-            
 
+#ofertasVerano a button{
+                    font-family: 'Lobster', cursive;
+                    font-size: 80px;
+                    color: #ffc107;
+                    background: none;
+                    height: 100%;
+                    width:100%;
+                    text-align: left;
+                    text-shadow: 2px 2px 2px black;
+                    padding-left: 3vw;
+                    padding-bottom: 10px;
+                    border:none ;
+}
 
+#ofertasVerano a button:hover{
+   
+        background: rgb(255,204,16);
+        background: linear-gradient(0deg, rgba(255,204,16,1) 0%, rgba(255,255,255,0.41) 9%);
 
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -255,54 +232,743 @@ body main section div a button:hover{
 
 
 footer{
-    background-color: rgb(62, 62, 62);
-    }
-
-footer ul{
-    margin-left: 8vw;
-   
+    overflow: hidden;
 }
 
-footer ul li{
-    display: inline-block;
-    color: aliceblue;
-    margin-left: 9vw;
-    margin-top: 21px;
-    padding: 4px 10px;
-    
-    
-    
+footer div ul li:hover{
+    /* background: rgb(255,204,16);
+    background: linear-gradient(0deg, rgba(255,204,16,1) 0%, rgba(0, 0, 0, 0) 10%); */
+    list-style:disc;
+    color: rgb(255,204,16);
 }
 
-    footer ul li:hover{
-        box-shadow: 1px 1px 8px rgba(99, 99, 99, 0.88);
-        border-radius: 6px;
-    }
 
+#contacto{
+    width: 150px !important;
+}
 
-
-footer button{
-    background-color: rgba(62, 62, 62);
-    border: 2px solid rgba(255, 255, 0, 0.542);
-    border-radius: 10px;
-    width: 180px;
-    height: 30px;
-    right: 20px;
-    position: relative;
-    left: 80vw;
-    margin: 2px;
-    bottom: 30px;
+#contacto a{
     
+    color: rgb(236, 186, 57);
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.679);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.679);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.03);
    }
 
-footer button a{
+
+
+            /* movimiento */
+
+                            
+                    #contacto a span {
+                        position: absolute;
+                    
+                    }
+
+                    #contacto a span:nth-child(1) {
+                        top: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 2px;
+                        background: linear-gradient(90deg, transparent,rgb(236, 186, 57));
+                        animation: btn-anim1 1s linear infinite;
+                    }
+
+                    @keyframes btn-anim1 {
+                        0% {
+                            left: -100%;
+                        }
+
+                        50%,100% {
+                            left: 100%;
+                        }
+
+                    }
+
+                    #contacto a span:nth-child(2) {
+                        
+                        right: 0;
+                        top: -100%;
+                        width: 2px;
+                        height: 100%;
+                        background: linear-gradient(180deg, transparent, rgb(236, 186, 57));
+                        animation: btn-anim2 1s linear infinite;
+                        animation-delay: .25s;
+                    }
+
+                    @keyframes btn-anim2 {
+                        0% {
+                            top: -100%;
+                        }
+
+                        50%,100% {
+                            top: 100%;
+                        }
+                    }
+
+                    #contacto a span:nth-child(3) {
+                        bottom: 0;
+                        right: -100%;
+                        width: 100%;
+                        height: 2px;
+                        background: linear-gradient(270deg, transparent, rgb(236, 186, 57));
+                        animation: btn-anim3 1s linear infinite;
+                        animation-delay: .5s;
+                    }
+
+                    @keyframes btn-anim3 {
+                        0% {
+                            right: -100%;
+                        }
+
+                        50%,100% {
+                            right: 100%;
+                        }
+                    }
+
+                    #contacto a span:nth-child(4) {
+                        bottom: -100%;
+                        left: 0;
+                        width: 2px;
+                        height: 100%;
+                        background: linear-gradient(360deg, transparent,rgb(236, 186, 57));
+                        animation: btn-anim4 1s linear infinite;
+                        animation-delay: .75s;
+                    }
+
+                    @keyframes btn-anim4 {
+                        0% {
+                            bottom: -100%;
+                        }
+
+                        50%,100% {
+                            bottom: 100%;
+                        }
+                    }
+
+
+                    #contacto a:hover{
+                        background: rgb(236, 186, 57);
+                        color: #fff;
+                        border-radius: 5px;
+                        box-shadow: 0 0 5px rgb(236, 186, 57),
+                            0 0 25px rgb(236, 186, 57),
+                            0 0 50px rgb(236, 186, 57),
+                            0 0 100px rgb(236, 186, 57);
+                    
+                    }
+
+                   
+
+/* ------------------------------Iniciar sección-------------------------------------------------------------------------------------- */
+
+
+.body2{
+    width: 98vw;
+    height: 98vh;
+    background-image: url(../logo/Background\ canguros.2.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-position: center top;
+    font-family: sans-serif;   
+    font-size: 16px;
+}
+
+    #contenedor-logo{
+        width: 15%;
+        height: 13%;
+    }
+
+    #logo{
+        height:70px;
+        width: 100px;
+        margin: 7px 28px;
+        border-radius: 30px 6px;
+        box-shadow: 0 0 15px wheat;
+    }
+    #logo:hover{
+        box-shadow: 0 0 15px rgb(236, 186, 57);
+    }
+
+
+    @media (min-width:575px){
+     #login-box{
+            box-sizing: border-box;
+            height: 330px;
+            width: 340px;
+            padding: 40px 50px;
+            border-radius: 20px;
+            background-color: rgba(207, 214, 219, 0.226);
+            box-shadow: 0 15px 25px rgb(0, 0, 0, .5),
+                        0 0 35px rgb(0, 0, 0, .5);
+            
+        }
+    }
+@media(max-width:574px){
+    #login-box{
+        box-sizing: border-box;
+        height: 330px;
+        width: 310px;
+        margin-top: 20px;
+        padding-top: 40px;
+        padding-left: 40px;
+        border-radius: 20px;
+        background-color: rgba(207, 214, 219, 0.331);
+        box-shadow: 0 15px 25px rgb(0, 0, 0, .5),
+                    0 0 35px rgb(0, 0, 0, .5);
+        }
+}
+
+#login-box #user-box {
+    position: relative;
+    }
+
+
+#login-box #user-box input {
+    width: 80%;
+    padding: 10px ;
+    font-size: 16px;
+    color:  rgb(236, 186, 57);
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background: transparent;
+}
+
+#login-box #user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+#login-box #user-box input:focus,
+#login-box #user-box input:hover{
+    border-bottom: 1px solid  rgb(236, 186, 57);   
+}
+#login-box #user-box input:focus~label,
+#login-box #user-box input:valid~label{
+    top: -30px;
+    left: 0;
+    font-size: 13px;
+}
+
+
+#login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(236, 186, 57);
+    font-size: 16px;
     text-decoration: none;
-    text-align: center;
-    color: aliceblue;
+    text-transform: uppercase ;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 5px;
+    letter-spacing: 4px;
+   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.679);
+   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.679);
+   backdrop-filter: blur(10px);
+   background-color: rgba(255, 255, 255, 0.03);
 }
 
-footer button:hover{
-    background-color: rgba(87, 87, 87, 0.429);
-    box-shadow:0 0 8px  rgba(255, 255, 0, 0.542);
-
+#login-box form a:hover {
+    background: rgb(236, 186, 57);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(236, 186, 57),
+        0 0 25px rgb(236, 186, 57),
+        0 0 50px rgb(236, 186, 57),
+        0 0 100px rgb(236, 186, 57);
 }
+
+#login-box form a span {
+    position: absolute;
+}
+
+#login-box form a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent,rgb(236, 186, 57));
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,100% {
+        left: 100%;
+    }
+}
+
+#login-box form a span:nth-child(2) {
+    right: 0;
+    top: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(236, 186, 57));
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,100% {
+        top: 100%;
+    }
+}
+
+#login-box form a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgb(236, 186, 57));
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,100% {
+        right: 100%;
+    }
+}
+
+#login-box form a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent,rgb(236, 186, 57));
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,100% {
+        bottom: 100%;
+    }
+}
+
+#footer-box{
+ list-style: none;
+ margin-top: 10px;
+}
+
+#footer-box li{
+    text-align: right;
+    padding: 7px;
+    
+}
+ #footer-box li a{
+    text-decoration: none;
+    font-size: 12px;
+    padding: 4px 5px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px black;
+    letter-spacing: 1px;
+ }
+
+
+ 
+#footer-box li a:hover{
+    border-bottom: 1px solid rgb(236, 186, 57);
+  } 
+ 
+
+
+
+
+
+
+
+
+
+/* ---------------------------------CONTACTO-------------------------------------------------------------------------------------------- */
+
+#main-contacto{
+    width: 100%;
+    height: 600px !important;
+    
+    margin: 0;
+}
+  
+@media(max-width:435px){
+    #main-contacto{
+        height: 680px !important;}  
+}
+
+
+#main-contacto div div form{
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.448);
+    box-shadow: 0 0 25px black;
+    
+}
+
+
+
+#main-contacto div div form ul li{
+    padding: 5px;
+    text-shadow: 0 0 3px white;
+}
+
+#main-contacto div div form ul li label{
+    padding: 0px 5px;
+}
+ #main-contacto div div form ul li input{
+    padding: 1px 8px;
+    height: 30px;
+    font-style: italic;
+    font-size: 12px;
+    border-radius: 8px;
+    border: 1px solid rgb(113, 113, 113);
+ }
+
+ #main-contacto div div form ul li textarea{
+    width: 100%;
+    padding: 4px 8px;
+    font-style: italic;
+    font-size: 12px;
+    border-radius: 8px;
+    border: 1px solid rgb(113, 113, 113);
+ }
+
+ 
+ 
+ .resset input{
+    padding: 3px 10px;
+    font-size: 11px;
+    border-radius: 12px;
+    background-color: rgba(240, 248, 255, 0.6);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.842);
+ }
+
+            .resset input:hover{
+                background-color:rgba(236, 185, 57, 0.483);
+                font-weight: bolder;
+                box-shadow: 0 0 5px rgb(236, 186, 57),
+                0 0 25px rgb(236, 186, 57),
+                0 0 50px rgb(236, 57, 57),
+                0 0 100px rgb(236, 186, 57);
+            }
+
+
+
+ .enviar input{
+    padding: 4px 12px;
+    font-size: 14px;
+    border-radius: 12px;
+    background-color: rgba(240, 248, 255, 0.6);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.842),5px 0px 10px  rgb(236, 186, 57);
+    }
+
+            .enviar input:hover{
+                padding: 4px 12px;
+                font-size: 14px;
+                font-weight: bolder;
+                border-radius: 12px;
+                background-color:rgba(236, 185, 57, 0.483);
+            
+                box-shadow: 0 0 5px rgb(236, 186, 57),
+                0 0 25px rgb(236, 186, 57),
+                0 0 50px rgb(236, 186, 57),
+                0 0 100px rgb(236, 186, 57);
+            } 
+
+
+
+            /* ----------------------PRODUCTOS------------------------------------------------------------------------- */
+
+
+    #body-productos{
+            /* font-size: 0; */
+            margin: 0;
+            height: 100vh;
+            
+    }
+       
+    #main-productos{
+        font-size: 16px;
+    }
+    
+
+
+    #cat-producto{
+        font-size: 12px;
+        background-color: rgb(65, 65, 65);
+    } 
+
+   
+    .hover:hover{
+        list-style:disc;
+        color: rgb(255,204,16) !important;
+    }
+    
+    #cat-producto div button{
+        height: 30px !important;
+        font-size: 13px !important;
+        border: none !important;
+    }
+
+    #cat-producto div button a h5{
+        
+        font-size: 13px !important;
+    }
+
+    #articulos div div div{
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.669);
+    }
+
+    #articulos div div div:hover{
+        box-shadow: 0 0 5px rgb(236, 186, 57),
+                            0 0 25px rgb(236, 186, 57),
+                            0 0 50px rgb(236, 186, 57),
+                            0 0 100px rgb(236, 186, 57);
+    }
+    #articulos div div div div{
+        box-shadow:none;
+    }
+    #articulos div div div p{
+        font-size: 12px;
+    }
+            
+    /* --------------------Pagina DETALLE-------------------------------------------------------------------- */
+
+
+
+
+
+
+
+    
+    #body-ropa{
+        overflow-x: hidden;
+    }
+    
+    .contePrincipal{
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    
+    .imgLateral{
+        /* display: inline-block; */
+        /* height: 480px;
+        width: 110px; */
+        /* margin: 5px 38px; */
+        padding: 15px;
+    }
+
+    
+    .imgLateral img{
+        height: 100px;
+        width: 100px;
+        margin: 6px;
+        size: contain;
+        border-radius: 20px;
+        border: 1px solid gray;
+        box-shadow: 0 0 2px rgb(77, 77, 77);
+        padding: 0;
+    }
+    .imgLateral img:hover{
+        box-shadow: 0 0 5px black;
+    }
+
+    @media(max-width:813px){
+        .imgLateral img{
+            height: 80px;
+            width: 80px;
+            margin: 6px;
+           
+        }
+        .Talle select{
+            width: 50% !important;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+        }
+        
+        
+    }
+
+    @media(max-width:635px){
+        .imgLateral img{
+            height: 65px;
+            width: 65px;
+            margin: 2px;
+           
+        }
+       
+    }
+    
+    
+    
+    .imgPrinc img{
+        height: 470px;
+        width: 470px;
+        
+        border-radius: 50px 15px;
+        
+       
+    }
+    
+    @media(max-width:767px){
+        .imgPrinc img{
+            height: 370px;
+            width: 370px;
+            
+        }
+        
+        
+    }
+    
+    
+    .conteDetalles{
+        
+        font-family: 'Roboto', sans-serif;
+        height: 100vh;
+    }
+    
+    .conteDetalles h1{
+        text-shadow: 1px  0   2px rgb(100, 100, 100);
+        
+    }
+    .precio{
+        
+        font-size: 27px;
+        
+        color: rgb(9, 9, 9);
+        text-shadow: 1px  1px   4px rgb(58, 58, 58),;
+    }
+    .conteDetalles p{
+        
+        /* height: 40px; */
+        font-size: 15px;
+        
+    }
+    .colores{
+        padding: 5px;
+        margin: 10px 1px;
+    }
+    
+    .colores button{
+        height: 20px;
+        width: 20px;
+        margin:  1px 10px;
+        border-radius: 10px;
+        border: 0px solid;
+         font-size: 0;
+         
+    }
+    
+       
+    #Negro{
+        background-color: black;
+        box-shadow: 0   0   5px rgb(52, 52, 52);
+    }
+    #Negro:hover{box-shadow: 2px 2px 6px rgb(12, 12, 12);
+    
+    }
+    #Rosado{
+        background-color: rgb(255, 118, 193);
+        box-shadow: 0   0   5px rgb(212, 99, 161);
+    }
+    #Rosado:hover{box-shadow: 2px 2px   5px rgb(212, 99, 161)}
+    #Blanco{
+        background-color: aliceblue;
+        box-shadow: 0   0   5px grey;
+    }
+    #BLanco:hover{
+        box-shadow: 2px 2px  5px grey;
+    }
+    
+    
+    .Talle{ 
+        /* display: inline-block; */
+        height: 30px;
+        /* width: 20px; */
+        margin: 8px;
+        padding: 0 10px 15px 10px;
+        width: 100%;
+        
+    }
+    
+    .Talle label{
+        font-weight: bolder;
+        }
+    .Talle select{
+        width: 60%;
+        margin: 2px 20px;
+        padding: 3px 10px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bolder;
+        border-radius: 8px;
+        background-color: rgba(222, 221, 221, 0.835);
+        letter-spacing: 3px;
+    }
+    
+    
+    
+    
+    
+    .comprar{
+        margin: 15px 10px;
+        width: 100%;
+        height: 40px;
+        border-radius: 8px;
+        border: 0px solid;
+        background-color: rgb(123, 123, 123);
+        color: aliceblue;
+        text-shadow: 1px  1px   15px rgb(72, 72, 72);
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        letter-spacing: 3px;
+        text-shadow: 1px 1px 15px black,1px 1px 1px black;
+        
+    }
+    
+    .comprar:hover{
+        background-color: rgb(82, 82, 82);
+        
+    
+    }
+    
+    .masDetalles{
+        list-style: none;
+       
+        
+        
+    }
+    
+    .masDetalles li{
+        padding: 10px 10px 10px;
+    }
+    .masDetalles li:hover {
+        text-shadow: 1px 1px 2px rgb(79, 79, 79);
+    } 
