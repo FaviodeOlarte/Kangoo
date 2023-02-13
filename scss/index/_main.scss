@@ -1,0 +1,76 @@
+
+    #main-idex{
+        height: 120vh;
+        font-size: 0;
+        #ofertasVerano{
+            margin: 0;
+            background-image: url(../images/summer\ sale.jpg);
+            background-attachment: fixed;
+            background-position: left;
+            background-repeat: no-repeat;
+            background-size:contain;
+            a{
+                button{
+                    font-family: 'Lobster', cursive;
+                    font-size: 80px;
+                    color: #ffc107;
+                    background: none;
+                    height: 100%;
+                    width:100%;
+                    text-align: left;
+                    text-shadow: 2px 2px 2px black;
+                    padding-left: 3vw;
+                    padding-bottom: 10px;
+                    border:none ;
+                    &:hover{
+                        background: rgb(255,204,16);
+                        background: linear-gradient(0deg, rgba(255,204,16,1) 0%, rgba(255,255,255,0.41) 9%);
+                        }
+                    }
+            }
+        }
+            
+        #mujeres{
+            font-size: 1px;
+            background-image: url(../images/Mujer\ modelo.webp);
+            background-position: right top;
+            background-repeat: no-repeat;
+            background-size: cover;   
+            box-shadow: 0 1px 10px rgb(0, 0, 0);
+            }
+        #hombres{
+                    
+            background-image: url(../images/Hombre\ modelo.webp);
+            background-position: right top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0 1px 10px rgb(0, 0, 0);
+            }
+        #ninos{
+            background-image: url(../images/Nino\ modelo.rec.jpg);
+            background-position: right top;
+            background-size: cover;
+            z-index: 50;
+            box-shadow: 0 1px 10px rgb(0, 0, 0);
+            }
+    }
+    .boton{
+        font-family: 'Lobster', cursive;
+        font-size: 80px;
+        color: #ffc107;
+        background: none;
+        height: 40vh;
+        width:100%;
+        text-align: left;
+        text-shadow: 2px 2px 2px black;
+        padding-left: 3vw;
+        padding-bottom: 10px;
+        border:none ;
+        
+        &:hover{
+            background: rgb(255,204,16);
+            background: linear-gradient(0deg, rgba(255,204,16,1) 0%, rgba(255,255,255,0.41) 9%);
+            }
+    }
+    
+    

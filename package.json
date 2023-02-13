@@ -1,0 +1,25 @@
+{
+  "name": "kangoo",
+  "version": "1.0.0",
+  "description": "Kangoo, pega el salto. Web pensada en todo aquello que buscas o queres vender",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaviodeOlarte/Kangoo.git"
+  },
+  "author": "Favio de Olarte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FaviodeOlarte/Kangoo/issues"
+  },
+  "homepage": "https://github.com/FaviodeOlarte/Kangoo#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  }
+}
