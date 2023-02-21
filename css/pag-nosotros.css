@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: auto !important;
+}
+body main {
+  font-size: 1rem;
+  height: auto !important;
+  background-color: rgba(227, 227, 227, 0.643);
+}
+body main div div div #img-nosotros {
+  height: 200px;
+  position: 100px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.358));
+}
+body main div #ubicacion {
+  height: 350px !important;
+}
+body main div #ubicacion iframe {
+  border-radius: 10px !important;
+  box-shadow: 3px 3px 5px gray;
+}/*# sourceMappingURL=pag-nosotros.css.map */

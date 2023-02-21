@@ -1,7 +1,7 @@
-span {
+.bordeAnimado1 {
   position: absolute;
 }
-span:nth-child(1) {
+.bordeAnimado1:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -10,7 +10,7 @@ span:nth-child(1) {
   -webkit-animation: btn-anim1 1s linear infinite;
           animation: btn-anim1 1s linear infinite;
 }
-span:nth-child(2) {
+.bordeAnimado1:nth-child(2) {
   right: 0;
   top: -100%;
   width: 2px;
@@ -21,7 +21,7 @@ span:nth-child(2) {
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
 }
-span:nth-child(3) {
+.bordeAnimado1:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -32,7 +32,7 @@ span:nth-child(3) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
-span:nth-child(4) {
+.bordeAnimado1:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;

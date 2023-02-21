@@ -1,13 +1,13 @@
 
     /* --------------------Pagina DETALLE-------------------------------------------------------------------- */
 
-
-
     #body-ropa{
-        overflow-x: hidden;
-        height: 83vh;
+        // overflow-x: hidden;
+        height: 100% !important;
+        background-color: rgba(227, 227, 227, 0.643);
         main{
             height: 100% !important;
+             
             #contePrincipal{
                 width: 100vw;
                 height: 90vh;
@@ -23,15 +23,18 @@
                                 box-shadow: 0 0 2px rgb(77, 77, 77) !important;
                                 padding: 0 !important;
                                 &:hover{
+                                    scale: 1.1;
                                     box-shadow: 0 0 5px black !important;
                                 }
                             }
                         }
                         #imgPrinc{
                             img{
-                                height: 440px ;
-                                width: 470px ;
+                                height: 490px ;
+                                width: 520px ;
                                 border-radius: 50px 15px !important;
+                                box-shadow:5px 5px 15px gray;
+                                
                             }
                         }
                 }

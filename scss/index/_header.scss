@@ -1,9 +1,4 @@
-  
-    #categorias{
-        li{
-           &:hover{ box-shadow: 1px 1px 3px rgba(81, 81, 81, 0.88);}
-            }
-        }
+//   ------------header-------------
     
     #logo{
         img{
@@ -11,14 +6,23 @@
             
             }
         }
+    #categorias{
+        li{
+            &:hover{ box-shadow: 1px 1px 3px rgba(81, 81, 81, 0.88);}
+            }
+        }
+    
     #navbarSupportedContent{
         ul{
             li{
                 a{
                     &:hover{
+                        color: white;
                         background: rgb(0, 0, 0);
                         background: linear-gradient(0deg, rgba(0, 0, 0, 0.723) 0%, rgba(0,241,255,0) 4%);
                         padding-bottom: 1px solid gray;
+                        scale: 1.1;
+                        
                     }
                 }
             }

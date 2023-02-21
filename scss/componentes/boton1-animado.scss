@@ -1,6 +1,6 @@
 
 //    ------------MOVIMIENTO---------------
-span {
+.bordeAnimado1 {
 position: absolute;
     &:nth-child(1){
         top: 0;
@@ -75,3 +75,4 @@ position: absolute;
         bottom: 100%;
     }
 }
+

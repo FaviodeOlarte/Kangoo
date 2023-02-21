@@ -1,8 +1,8 @@
 @charset "UTF-8";
-span {
+.bordeAnimado1 {
   position: absolute;
 }
-span:nth-child(1) {
+.bordeAnimado1:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -11,7 +11,7 @@ span:nth-child(1) {
   -webkit-animation: btn-anim1 1s linear infinite;
           animation: btn-anim1 1s linear infinite;
 }
-span:nth-child(2) {
+.bordeAnimado1:nth-child(2) {
   right: 0;
   top: -100%;
   width: 2px;
@@ -22,7 +22,7 @@ span:nth-child(2) {
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
 }
-span:nth-child(3) {
+.bordeAnimado1:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -33,7 +33,7 @@ span:nth-child(3) {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
-span:nth-child(4) {
+.bordeAnimado1:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
@@ -110,18 +110,34 @@ span:nth-child(4) {
     bottom: 100%;
   }
 }
-#categorias li:hover {
-  box-shadow: 1px 1px 3px rgba(81, 81, 81, 0.88);
+.marcaRuta {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.723) 0%, rgba(0, 241, 255, 0) 12%);
+  padding-bottom: 2px solid gray;
+}
+.marcaRuta a {
+  padding-bottom: 2px;
+}
+
+.marcaRuta2 {
+  color: rgb(255, 204, 16);
+  scale: 1.1;
 }
 
 #logo img:hover {
   box-shadow: 3px 3px 10px rgb(79, 61, 17);
 }
 
+#categorias li:hover {
+  box-shadow: 1px 1px 3px rgba(81, 81, 81, 0.88);
+}
+
 #navbarSupportedContent ul li a:hover {
+  color: white;
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.723) 0%, rgba(0, 241, 255, 0) 4%);
   padding-bottom: 1px solid gray;
+  scale: 1.1;
 }
 
 #main-idex {
@@ -129,6 +145,7 @@ span:nth-child(4) {
   font-size: 0;
 }
 #main-idex #ofertasVerano {
+  height: 120vh !important;
   margin: 0;
   background-image: url(../images/summer\ sale.jpg);
   background-attachment: fixed;
@@ -198,8 +215,8 @@ footer {
   overflow: hidden;
 }
 footer div ul li:hover {
-  list-style: disc;
   color: rgb(255, 204, 16);
+  scale: 1.1;
 }
 
 #contacto {
@@ -356,10 +373,48 @@ footer div ul li:hover {
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5), 0 0 35px rgba(0, 0, 0, 0.5);
   }
 }
+/* ----------------------PRODUCTOS------------------------------------------------------------------------- */
+#body-productos {
+  margin: 0;
+  height: 100vh;
+}
+#body-productos #main-productos {
+  font-size: 1rem !important;
+}
+#body-productos #main-productos #cat-producto {
+  font-size: 13px;
+  background-color: rgb(65, 65, 65);
+}
+#body-productos #main-productos #cat-producto div button {
+  height: 30px !important;
+  font-size: 13px !important;
+  border: none !important;
+}
+#body-productos #main-productos #cat-producto div button a h5 {
+  font-size: 13px !important;
+}
+#body-productos #main-productos #articulos div div #card {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.669);
+}
+#body-productos #main-productos #articulos div div #card:hover {
+  box-shadow: 0 0 5px rgb(236, 186, 57), 0 0 25px rgb(236, 186, 57), 0 0 50px rgb(236, 186, 57), 0 0 100px rgb(236, 186, 57);
+}
+#body-productos #main-productos #articulos div div #card div {
+  box-shadow: none;
+}
+#body-productos #main-productos #articulos div div #card p {
+  font-size: 12px;
+}
+
+.hover:hover {
+  list-style: disc;
+  color: rgb(255, 204, 16) !important;
+}
+
 /* ---------------------------------CONTACTO-------------------------------------------------------------------------------------------- */
 #main-contacto {
   width: 100%;
-  height: 600px !important;
+  height: 105vh !important;
   margin: 0;
 }
 #main-contacto div div form {
@@ -423,48 +478,10 @@ footer div ul li:hover {
     height: 680px !important;
   }
 }
-/* ----------------------PRODUCTOS------------------------------------------------------------------------- */
-#body-productos {
-  margin: 0;
-  height: 100vh;
-}
-#body-productos #main-productos {
-  font-size: 1rem;
-}
-#body-productos #main-productos #cat-producto {
-  font-size: 12px;
-  background-color: rgb(65, 65, 65);
-}
-#body-productos #main-productos #cat-producto div button {
-  height: 30px !important;
-  font-size: 13px !important;
-  border: none !important;
-}
-#body-productos #main-productos #cat-producto div button a h5 {
-  font-size: 13px !important;
-}
-#body-productos #main-productos #articulos div div #card {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.669);
-}
-#body-productos #main-productos #articulos div div #card:hover {
-  box-shadow: 0 0 5px rgb(236, 186, 57), 0 0 25px rgb(236, 186, 57), 0 0 50px rgb(236, 186, 57), 0 0 100px rgb(236, 186, 57);
-}
-#body-productos #main-productos #articulos div div #card div {
-  box-shadow: none;
-}
-#body-productos #main-productos #articulos div div #card p {
-  font-size: 12px;
-}
-
-.hover:hover {
-  list-style: disc;
-  color: rgb(255, 204, 16) !important;
-}
-
 /* --------------------Pagina DETALLE-------------------------------------------------------------------- */
 #body-ropa {
-  overflow-x: hidden;
-  height: 83vh;
+  height: 100% !important;
+  background-color: rgba(227, 227, 227, 0.643);
 }
 #body-ropa main {
   height: 100% !important;
@@ -484,12 +501,14 @@ footer div ul li:hover {
   padding: 0 !important;
 }
 #body-ropa main #contePrincipal div #imgLateral img:hover {
+  scale: 1.1;
   box-shadow: 0 0 5px black !important;
 }
 #body-ropa main #contePrincipal div #imgPrinc img {
-  height: 440px;
-  width: 470px;
+  height: 490px;
+  width: 520px;
   border-radius: 50px 15px !important;
+  box-shadow: 5px 5px 15px gray;
 }
 #body-ropa main #contePrincipal #conteDetalles {
   font-family: "Roboto", sans-serif !important;
@@ -631,6 +650,37 @@ footer div ul li:hover {
   padding: 0;
 }
 
+body {
+  height: auto !important;
+}
+body main {
+  font-size: 1rem;
+  height: auto !important;
+  background-color: rgba(227, 227, 227, 0.643);
+}
+body main div div div #img-nosotros {
+  height: 200px;
+  position: 100px;
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.358));
+}
+body main div #ubicacion {
+  height: 350px !important;
+}
+body main div #ubicacion iframe {
+  border-radius: 10px !important;
+  box-shadow: 3px 3px 5px gray;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 1400px) {
+  #categorias li {
+    margin: 3px 10px !important;
+  }
+}
 @media (max-width: 767px) {
   #usuario::after {
     content: "Usuario";
@@ -661,6 +711,16 @@ footer div ul li:hover {
   footer div ul li a {
     font-size: 13px;
   }
+  #categorias li {
+    margin: 3px 10px !important;
+  }
+  #img-nosotros {
+    height: 150px !important;
+    width: 220px !important;
+  }
+  #main-nosotros {
+    height: auto !important;
+  }
 }
 @media (max-width: 575px) {
   footer {
@@ -681,13 +741,13 @@ footer div ul li:hover {
     margin: 0 !important;
   }
   #categorias li {
-    margin: 4px 10px !important;
+    margin: 4px 4px !important;
   }
   #categorias li a {
     font-size: 13px;
   }
 }
-@media (max-width: 520px) and (max-width: 450px) {
+@media (max-width: 450px) {
   #logo img {
     height: 45px;
     border-radius: 15px 3px;
@@ -701,5 +761,12 @@ footer div ul li:hover {
   }
   #busqueda button img {
     padding-bottom: 3px;
+  }
+  #categorias li {
+    margin: 4px 0px !important;
+  }
+  #categorias li a {
+    margin-left: 9px !important;
+    margin-right: 9px !important;
   }
 }/*# sourceMappingURL=style.css.map */

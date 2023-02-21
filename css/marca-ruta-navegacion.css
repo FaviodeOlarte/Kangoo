@@ -1,0 +1,13 @@
+.marcaRuta {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.723) 0%, rgba(0, 241, 255, 0) 12%);
+  padding-bottom: 2px solid gray;
+}
+.marcaRuta a {
+  padding-bottom: 2px;
+}
+
+.marcaRuta2 {
+  color: rgb(255, 204, 16);
+  scale: 1.1;
+}/*# sourceMappingURL=marca-ruta-navegacion.css.map */

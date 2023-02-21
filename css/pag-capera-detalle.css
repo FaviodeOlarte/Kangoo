@@ -1,7 +1,7 @@
 /* --------------------Pagina DETALLE-------------------------------------------------------------------- */
 #body-ropa {
-  overflow-x: hidden;
-  height: 83vh;
+  height: 100% !important;
+  background-color: rgba(227, 227, 227, 0.643);
 }
 #body-ropa main {
   height: 100% !important;
@@ -21,12 +21,14 @@
   padding: 0 !important;
 }
 #body-ropa main #contePrincipal div #imgLateral img:hover {
+  scale: 1.1;
   box-shadow: 0 0 5px black !important;
 }
 #body-ropa main #contePrincipal div #imgPrinc img {
-  height: 440px;
-  width: 470px;
+  height: 490px;
+  width: 520px;
   border-radius: 50px 15px !important;
+  box-shadow: 5px 5px 15px gray;
 }
 #body-ropa main #contePrincipal #conteDetalles {
   font-family: "Roboto", sans-serif !important;

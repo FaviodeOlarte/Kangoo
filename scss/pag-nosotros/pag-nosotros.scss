@@ -1,0 +1,37 @@
+
+// ------------------NOSOTROS-------------------
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: auto !important;
+    main{
+        font-size: 1rem;
+        height: auto !important;
+        background-color: rgba(227, 227, 227, 0.643);
+        div{
+            div{
+                div{
+                    #img-nosotros{
+                     height: 200px;
+                     position: 100px;
+                     filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.358));
+                    }
+                }
+                
+            }
+            #ubicacion{
+                height: 350px !important;
+                iframe{
+                    border-radius: 10px !important;
+                    box-shadow: 3px 3px 5px gray;
+                }
+                
+            }
+        }
+    }
+}
+

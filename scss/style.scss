@@ -1,13 +1,15 @@
 
 @import "./variables";
 @import "./componentes/boton1-animado.scss";
+@import "./componentes/marca-ruta-navegacion.scss";
 @import "./index/header";
 @import "./index/main";
 @import "./index/footer";
-@import "./pag-iniciar-seccion/pag-iniciar-seccion.scss";
-@import "./contacto/pag-contactanos.scss";
-@import "./pag-mujeres/pag-mujeres.scss";
-@import "./pag-capera-detalle/pag-capera-detalle.scss";
+ @import "./pag-iniciar-seccion/pag-iniciar-seccion.scss";
+ @import "./pag-mujeres/pag-mujeres.scss";
+ @import "./contacto/pag-contactanos.scss";
+ @import "./pag-capera-detalle/pag-capera-detalle.scss";
+@import "./pag-nosotros/pag-nosotros.scss";
 
     // RESET
 
@@ -17,7 +19,11 @@
    
 }
 
-
+@media (max-width:1400px){
+    #categorias li{
+        margin: 3px 10px !important;
+    }
+}
 
 @media(max-width: 767px){
 
@@ -56,9 +62,23 @@
             font-size: 13px;
 
         }
-
+        #categorias li{
+            margin: 3px 10px !important;
+        }
+            #img-nosotros{
+                height: 150px !important;
+                width: 220px !important;
+            }
+            #main-nosotros{
+                height: auto !important;
+            }
+        
 }
-
+// @media(max-width:635px){
+//     #main-nosotros{
+//         height: auto !important;
+//     }
+// }
 
 @media(max-width:575px){
         footer{
@@ -87,12 +107,14 @@
         margin:0 !important;
     }
     #categorias li{
-        margin: 4px 10px !important;
+        margin: 4px 4px !important;
+        a{
+            font-size: 13px;
+           
     }
-    #categorias li a{
-        font-size: 13px;
+    }
 }
-
+    
 
 
 @media(max-width: 450px){
@@ -102,17 +124,21 @@
     }
     #busqueda{
         height: 30px;
+        button{
+            padding: 2px;
+            border-radius: 10px;
+            img{
+                padding-bottom: 3px;
+            }
+        }
     }
-    #busqueda button{
-        
-        padding: 2px;
-        border-radius: 10px;
+    
+    #categorias li{
+        margin: 4px 0px !important;
+        a{
+            margin-left: 9px !important;
+            margin-right: 9px !important;
+        }
     }
-    #busqueda button img{
-        padding-bottom: 3px;
-    }
-   
-    }
+    
 }
-
-  

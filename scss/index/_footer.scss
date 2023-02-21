@@ -6,8 +6,8 @@ footer{
         ul{
             li{
                 &:hover{
-                    list-style:disc;
                     color: rgb(255,204,16);
+                    scale: 1.1;
                 }
             }
         }
