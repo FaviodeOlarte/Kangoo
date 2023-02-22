@@ -2,7 +2,7 @@
 /* ------------------------------Iniciar sección-------------------------------------------------------------------------------------- */
 .body2 {
   width: 98vw;
-  height: 98vh;
+  height: 98vh !important;
   background-image: url(../logo/Background\ canguros.2.jpg);
   background-size: cover;
   background-repeat: no-repeat;

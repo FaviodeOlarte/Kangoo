@@ -145,7 +145,7 @@
   font-size: 0;
 }
 #main-idex #ofertasVerano {
-  height: 120vh !important;
+  height: 120vh;
   margin: 0;
   background-image: url(../images/summer\ sale.jpg);
   background-attachment: fixed;
@@ -209,11 +209,9 @@
 .boton:hover {
   background: rgb(255, 204, 16);
   background: linear-gradient(0deg, rgb(255, 204, 16) 0%, rgba(255, 255, 255, 0.41) 9%);
+  font-size: 90px !important;
 }
 
-footer {
-  overflow: hidden;
-}
 footer div ul li:hover {
   color: rgb(255, 204, 16);
   scale: 1.1;
@@ -246,7 +244,7 @@ footer div ul li:hover {
 /* ------------------------------Iniciar sección-------------------------------------------------------------------------------------- */
 .body2 {
   width: 98vw;
-  height: 98vh;
+  height: 98vh !important;
   background-image: url(../logo/Background\ canguros.2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -691,15 +689,15 @@ body main div #ubicacion iframe {
   #favorito::after {
     content: "Favoritos";
   }
-  #ofertasVerano {
+  #main-idex {
+    height: 130vh !important;
+  }
+  #main-idex #ofertasVerano {
     height: 40vh !important;
     background-size: cover !important;
     background-position: 0px -95px !important;
   }
-  body main {
-    height: 130vh !important;
-  }
-  main div section div {
+  #main-idex div section div {
     height: 30vh !important;
   }
   .boton {
