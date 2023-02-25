@@ -9,21 +9,6 @@
   background-color: rgba(240, 248, 255, 0.448);
   box-shadow: 0 0 25px black;
 }
-#main-contacto div div form ul li {
-  padding: 5px;
-  text-shadow: 0 0 3px white;
-}
-#main-contacto div div form ul li label {
-  padding: 0px 5px;
-}
-#main-contacto div div form ul li input {
-  padding: 1px 8px;
-  height: 30px;
-  font-style: italic;
-  font-size: 12px;
-  border-radius: 8px;
-  border: 1px solid rgb(113, 113, 113);
-}
 #main-contacto div div form ul li textarea {
   width: 100%;
   padding: 4px 8px;

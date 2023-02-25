@@ -2,6 +2,7 @@
 @import "./variables";
 @import "./componentes/boton1-animado.scss";
 @import "./componentes/marca-ruta-navegacion.scss";
+@import "./componentes/anim-box-up.scss";
 @import "./index/header";
 @import "./index/main";
 @import "./index/footer";
@@ -87,14 +88,14 @@
         #main-nosotros{
             height: auto !important;
         }
+        .animBoxUp {
+            position: relative !important;
+            input {
+                width: 90% !important;
+            }
+        }
         
 }
-// @media(max-width:635px){
-//     #main-nosotros{
-//         height: auto !important;
-//     }
-// }
-
 @media(max-width:575px){
         footer{
             height: 80px !important;

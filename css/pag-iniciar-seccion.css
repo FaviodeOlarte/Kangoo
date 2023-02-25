@@ -28,10 +28,10 @@
   position: relative;
   height: 350px;
 }
-.body2 #login-box div div form #user-box {
+.body2 #login-box div div form .user-box {
   position: relative;
 }
-.body2 #login-box div div form #user-box input {
+.body2 #login-box div div form .user-box input {
   width: 80%;
   padding: 10px;
   font-size: 16px;
@@ -42,15 +42,15 @@
   outline: none;
   background: transparent;
 }
-.body2 #login-box div div form #user-box input:focus, .body2 #login-box div div form #user-box input:hover {
+.body2 #login-box div div form .user-box input:focus, .body2 #login-box div div form .user-box input:hover {
   border-bottom: 1px solid rgb(236, 186, 57);
 }
-.body2 #login-box div div form #user-box input:focus ~ label, .body2 #login-box div div form #user-box input:valid ~ label {
-  top: -30px;
+.body2 #login-box div div form .user-box input:focus ~ label, .body2 #login-box div div form .user-box input:valid ~ label {
+  top: -28px;
   left: 0;
   font-size: 13px;
 }
-.body2 #login-box div div form #user-box label {
+.body2 #login-box div div form .user-box label {
   position: absolute;
   top: 0;
   left: 0;

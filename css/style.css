@@ -124,6 +124,54 @@
   scale: 1.1;
 }
 
+.animBoxUp {
+  position: relative !important;
+}
+.animBoxUp input {
+  width: 45% !important;
+  padding: 5px !important;
+  font-size: 16px !important;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0) !important;
+  margin-bottom: 30px !important;
+  border: none !important;
+  border-bottom: 1px solid rgb(255, 255, 255) !important;
+  outline: none !important;
+  background: transparent !important;
+}
+.animBoxUp input:focus, .animBoxUp input:hover {
+  border-bottom: 1px solid rgb(236, 186, 57) !important;
+}
+.animBoxUp input:focus ~ .labelAnimUp, .animBoxUp input:valid ~ .labelAnimUp {
+  top: -30px !important;
+  left: 0 !important;
+  font-size: 13px !important;
+  color: rgb(236, 186, 57) !important;
+  display: block !important;
+}
+.animBoxUp .labelAnimUp {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  padding: 10px 0 !important;
+  font-size: 15px !important;
+  color: #fff !important;
+  pointer-events: none !important;
+  transition: 0.5s !important;
+  text-shadow: 1px 1px 2px black !important;
+}
+.animBoxUp .labelAnimUpFixed {
+  position: absolute !important;
+  padding: 10px 0 !important;
+  pointer-events: none !important;
+  transition: 0.5s !important;
+  text-shadow: 1px 1px 2px black !important;
+  top: -30px !important;
+  left: 0 !important;
+  font-size: 13px !important;
+  color: rgb(236, 186, 57) !important;
+}
+
 #logo img:hover {
   box-shadow: 3px 3px 10px rgb(79, 61, 17);
 }
@@ -270,10 +318,10 @@ footer div ul li:hover {
   position: relative;
   height: 350px;
 }
-.body2 #login-box div div form #user-box {
+.body2 #login-box div div form .user-box {
   position: relative;
 }
-.body2 #login-box div div form #user-box input {
+.body2 #login-box div div form .user-box input {
   width: 80%;
   padding: 10px;
   font-size: 16px;
@@ -284,15 +332,15 @@ footer div ul li:hover {
   outline: none;
   background: transparent;
 }
-.body2 #login-box div div form #user-box input:focus, .body2 #login-box div div form #user-box input:hover {
+.body2 #login-box div div form .user-box input:focus, .body2 #login-box div div form .user-box input:hover {
   border-bottom: 1px solid rgb(236, 186, 57);
 }
-.body2 #login-box div div form #user-box input:focus ~ label, .body2 #login-box div div form #user-box input:valid ~ label {
-  top: -30px;
+.body2 #login-box div div form .user-box input:focus ~ label, .body2 #login-box div div form .user-box input:valid ~ label {
+  top: -28px;
   left: 0;
   font-size: 13px;
 }
-.body2 #login-box div div form #user-box label {
+.body2 #login-box div div form .user-box label {
   position: absolute;
   top: 0;
   left: 0;
@@ -388,7 +436,7 @@ footer div ul li:hover {
   font-size: 13px !important;
   border: none !important;
 }
-#body-productos #main-productos #cat-producto div button a h5 {
+#body-productos #main-productos #cat-producto div button a h1 {
   font-size: 13px !important;
 }
 #body-productos #main-productos #articulos div div #card {
@@ -419,21 +467,6 @@ footer div ul li:hover {
   height: 100%;
   background-color: rgba(240, 248, 255, 0.448);
   box-shadow: 0 0 25px black;
-}
-#main-contacto div div form ul li {
-  padding: 5px;
-  text-shadow: 0 0 3px white;
-}
-#main-contacto div div form ul li label {
-  padding: 0px 5px;
-}
-#main-contacto div div form ul li input {
-  padding: 1px 8px;
-  height: 30px;
-  font-style: italic;
-  font-size: 12px;
-  border-radius: 8px;
-  border: 1px solid rgb(113, 113, 113);
 }
 #main-contacto div div form ul li textarea {
   width: 100%;
@@ -576,7 +609,7 @@ footer div ul li:hover {
 }
 #body-ropa main #contePrincipal #conteDetalles .comprar {
   margin: 15px 10px;
-  width: 100%;
+  width: 95%;
   height: 40px;
   border-radius: 8px;
   border: 0px solid;
@@ -718,6 +751,12 @@ body main div #ubicacion iframe {
   }
   #main-nosotros {
     height: auto !important;
+  }
+  .animBoxUp {
+    position: relative !important;
+  }
+  .animBoxUp input {
+    width: 90% !important;
   }
 }
 @media (max-width: 575px) {
