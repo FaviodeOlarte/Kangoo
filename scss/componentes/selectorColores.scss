@@ -1,0 +1,56 @@
+// -------------------Colores de prendas -----------------------------
+
+
+.colores{
+    padding: 5px;
+    margin: 10px 1px;
+    button{
+        height: 20px;
+        width: 20px;
+        margin:  1px 10px;
+        border-radius: 10px;
+        font-size: 0;
+        border: 0px solid;
+        &:hover{
+            scale: 1.2;
+        }
+    }
+    #Negro{
+        background-color: black;
+        box-shadow: 0   0   5px rgb(52, 52, 52);
+        &:hover{box-shadow: 2px 2px 6px rgb(12, 12, 12);
+                }
+    }
+    #Rosado{
+        background-color: rgb(255, 118, 193);
+        box-shadow: 0   0   5px rgb(212, 99, 161);
+        &:hover{box-shadow: 2px 2px   5px rgb(212, 99, 161)}
+    }
+    #Blanco{
+        background-color: aliceblue;
+        box-shadow: 0   0   5px grey;
+        &:hover{
+            box-shadow: 2px 2px  5px grey;}
+    }
+    #Azul{
+        background-color: rgb(31, 48, 175);
+        box-shadow: 0   0   5px rgb(54, 54, 244);
+        &:hover{box-shadow: 2px 2px 6px rgb(40, 40, 137);}
+    }
+    #Morado{
+        background-color: rgb(126, 21, 93);
+        box-shadow: 0   0   5px rgb(163, 28, 120);
+        &:hover{box-shadow: 2px 2px 6px rgb(176, 30, 130);}
+    }
+    #Marron{
+        background-color: #b17c54;
+        box-shadow: 0   0   5px #8a6141;
+        &:hover{box-shadow: 2px 2px 6px #755238;}
+    }
+    
+    #Jeans{
+        background-color: #6F8FAF;
+        box-shadow: 0   0   5px #536b83;
+        &:hover{box-shadow: 2px 2px 6px #3f5062;}
+    }
+}

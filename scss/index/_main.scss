@@ -3,7 +3,7 @@
         height: 120vh;
         font-size: 0;
         #ofertasVerano{
-            height: 120vh;
+            height: auto;
             margin: 0;
             background-image: url(../images/summer\ sale.jpg);
             background-attachment: fixed;
@@ -74,7 +74,7 @@
          &:hover{
             background: rgb(255,204,16);
             background: linear-gradient(0deg, rgba(255,204,16,1) 0%, rgba(255,255,255,0.41) 9%);
-            font-size: 90px !important;
+            font-size: 90px;
         }
     }
     

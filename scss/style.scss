@@ -3,6 +3,7 @@
 @import "./componentes/boton1-animado.scss";
 @import "./componentes/marca-ruta-navegacion.scss";
 @import "./componentes/anim-box-up.scss";
+@import "./componentes/selectorColores.scss";
 @import "./index/header";
 @import "./index/main";
 @import "./index/footer";
@@ -100,8 +101,15 @@
         footer{
             height: 80px !important;
         }
-
-
+        #ofertasVerano{
+            background-attachment: scroll !important ;
+        }
+        .boton{
+            font-size: 60px;
+            &:hover{
+                font-size: 70px;
+            }
+        }
 
 }
 

@@ -20,6 +20,7 @@
 #main-contacto div div form ul div .resset input {
   padding: 3px 10px;
   font-size: 11px;
+  border: none;
   border-radius: 12px;
   background-color: rgba(240, 248, 255, 0.6);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.842);
@@ -32,6 +33,7 @@
 #main-contacto div div form ul div .enviar input {
   padding: 4px 12px;
   font-size: 14px;
+  border: none;
   border-radius: 12px;
   background-color: rgba(240, 248, 255, 0.6);
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.842), 5px 0px 10px rgb(236, 186, 57);

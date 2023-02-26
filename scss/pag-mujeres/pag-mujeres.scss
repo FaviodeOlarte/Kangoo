@@ -1,12 +1,12 @@
 
 
-            /* ----------------------PRODUCTOS------------------------------------------------------------------------- */
+            /* ----------------------PRODUCTOS  ------------------------------------------------------------------------- */
 
 
-#body-productos{
+.body-productos{
     margin: 0;
     height: 100vh;
-    #main-productos{
+    .main-productos{
         font-size: 1rem !important;
         #cat-producto{
             font-size: 13px;
@@ -25,7 +25,7 @@
                 }
             }
         } 
-        #articulos{
+        .articulos{
             div{
                 div{
                     #card{

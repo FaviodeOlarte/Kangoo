@@ -44,39 +44,6 @@
 #body-ropa main #contePrincipal #conteDetalles p {
   font-size: 15px !important;
 }
-#body-ropa main #contePrincipal #conteDetalles .colores {
-  padding: 5px;
-  margin: 10px 1px;
-}
-#body-ropa main #contePrincipal #conteDetalles .colores button {
-  height: 20px;
-  width: 20px;
-  margin: 1px 10px;
-  border-radius: 10px;
-  font-size: 0;
-  border: 0px solid;
-}
-#body-ropa main #contePrincipal #conteDetalles .colores #Negro {
-  background-color: black;
-  box-shadow: 0 0 5px rgb(52, 52, 52);
-}
-#body-ropa main #contePrincipal #conteDetalles .colores #Negro:hover {
-  box-shadow: 2px 2px 6px rgb(12, 12, 12);
-}
-#body-ropa main #contePrincipal #conteDetalles .colores #Rosado {
-  background-color: rgb(255, 118, 193);
-  box-shadow: 0 0 5px rgb(212, 99, 161);
-}
-#body-ropa main #contePrincipal #conteDetalles .colores #Rosado:hover {
-  box-shadow: 2px 2px 5px rgb(212, 99, 161);
-}
-#body-ropa main #contePrincipal #conteDetalles .colores #Blanco {
-  background-color: aliceblue;
-  box-shadow: 0 0 5px grey;
-}
-#body-ropa main #contePrincipal #conteDetalles .colores #Blanco:hover {
-  box-shadow: 2px 2px 5px grey;
-}
 #body-ropa main #contePrincipal #conteDetalles .Talle {
   height: 30px;
   margin: 8px;
@@ -102,7 +69,7 @@
   height: 40px;
   border-radius: 8px;
   border: 0px solid;
-  background-color: rgb(123, 123, 123);
+  background-color: rgb(81, 80, 80);
   color: aliceblue;
   text-shadow: 1px 1px 15px rgb(72, 72, 72);
   font-family: "Roboto", sans-serif;
@@ -111,7 +78,24 @@
   text-shadow: 1px 1px 15px black, 1px 1px 1px black;
 }
 #body-ropa main #contePrincipal #conteDetalles .comprar:hover {
-  background-color: rgb(82, 82, 82);
+  background-color: rgb(54, 54, 54);
+}
+#body-ropa main #contePrincipal #conteDetalles .agregarAlCarrito {
+  margin: 15px 10px;
+  width: 95%;
+  height: 40px;
+  border-radius: 8px;
+  border: 0px solid;
+  background-color: rgb(135, 135, 135);
+  color: aliceblue;
+  text-shadow: 1px 1px 15px rgb(72, 72, 72);
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 15px black, 1px 1px 1px black;
+}
+#body-ropa main #contePrincipal #conteDetalles .agregarAlCarrito:hover {
+  background-color: rgb(43, 43, 43);
 }
 #body-ropa main #contePrincipal #conteDetalles .masDetalles {
   list-style: none;
@@ -121,6 +105,13 @@
 }
 #body-ropa main #contePrincipal #conteDetalles .masDetalles li:hover {
   text-shadow: 1px 1px 2px rgb(79, 79, 79);
+}
+#body-ropa main #cuponPrimeraCompra {
+  box-shadow: 0 0 10px black;
+  background-color: rgba(127, 127, 127, 0.643);
+}
+#body-ropa main #cuponPrimeraCompra h2 {
+  text-align: center;
 }
 
 @media (max-width: 813px) {
