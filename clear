@@ -1,0 +1,59 @@
+[33mcommit e9e1eefdb8ba25e11e0f7f21fd90cb771e211c00[m[33m ([m[1;36mHEAD -> [m[1;32mPF+deOlarte[m[33m)[m
+Author: Favio de Olarte <f.avio11@hotmail.com>
+Date:   Sat Feb 25 23:44:08 2023 -0300
+
+    Color barra latera;
+
+[33mcommit af5ccd2784d2277a7b7db50994826584f4155a31[m
+Author: Favio de Olarte <f.avio11@hotmail.com>
+Date:   Sat Feb 25 23:42:24 2023 -0300
+
+    Forzado de colo barra lateral productos
+
+[33mcommit fd32d1dee5f3bc3cf12c0bb129a149becd923cee[m
+Author: Favio de Olarte <f.avio11@hotmail.com>
+Date:   Sat Feb 25 23:38:50 2023 -0300
+
+    Entrega final
+
+[33mcommit 833e8475c87f85708fcc29d83302c2ca1aa62636[m[33m ([m[1;31morigin/PF+deOlarte[m[33m, [m[1;32mRamaSASS[m[33m)[m
+Author: Favio de Olarte <f.avio11@hotmail.com>
+Date:   Sat Feb 25 23:27:33 2023 -0300
+
+    Ultimando detalles y agregado de pag hombre, niños y otros detalles
+
+[33mcommit 8084f84d854c3869c0f36ca59b6a2942c9310693[m[33m ([m[1;31morigin/RamaSASS[m[33m)[m
+Author: Favio de Olarte <f.avio11@hotmail.com>
+Date:   Fri Feb 24 23:33:29 2023 -0300
+
+    Se modifica y mejora pagina contacto, ademas se corrigen etiquetas para CEO
+
+[33mcommit 81cf80717edac20a7a4d5bf82de2844173d90d2d[m
+Author: Favio de Olarte <f.avio11@hotmail.com>
+Date:   Wed Feb 22 13:25:27 2023 -0300
+
+    Agregado de NOSOTROS, reparacion de errores en index e iniciar sección
+
+[33mcommit d01764be991e2377d5203419c230448ec0852d24[m
+Author: Favio de Olarte <f.avio11@hotmail.com>
+Date:   Tue Feb 21 01:28:09 2023 -0300
+
+    Actualizacion de proyecto y agregado de pagina NOSOTROS
+
+[33mcommit ecafecbd3b32551589d7dca5f0c1937b233515cf[m
+Author: Favio de Olarte <f.avio11@hotmail.com>
+Date:   Mon Feb 13 11:37:46 2023 -0300
+
+    Carga de archivos SASS/SCSS
+
+[33mcommit c0032c2a5997de3aec10811c231c392183bdb64e[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m, [m[1;32mbackup[m[33m)[m
+Author: Favio de Olarte <f.avio11@hotmail.com>
+Date:   Mon Jan 30 22:46:55 2023 -0300
+
+    Agregado de boodstrap
+
+[33mcommit f999e61f9a27e15d038bf12b4257d5e11998c261[m[33m ([m[1;31morigin/PreEntrega+deOlarte[m[33m, [m[1;32mPreEntrega+deOlarte[m[33m)[m
+Author: Favio de Olarte <f.avio11@hotmail.com>
+Date:   Sat Jan 21 11:04:57 2023 -0300
+
+    Primera carga con todos los archivos
