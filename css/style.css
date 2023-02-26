@@ -497,7 +497,7 @@ footer div ul li:hover {
 }
 .body-productos .main-productos #cat-producto {
   font-size: 13px;
-  background-color: rgb(65, 65, 65);
+  background-color: rgb(68, 67, 67) !important;
 }
 .body-productos .main-productos #cat-producto div button {
   height: 30px !important;
