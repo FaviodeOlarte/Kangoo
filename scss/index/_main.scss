@@ -2,10 +2,11 @@
     #main-idex{
         height: 120vh;
         font-size: 0;
+        
         #ofertasVerano{
             height: auto;
             margin: 0;
-            background-image: url(../images/summer\ sale.jpg);
+            background-image: $imgMainCategoriaOferta;
             background-attachment: fixed;
             background-position: left;
             background-repeat: no-repeat;
@@ -33,25 +34,22 @@
             
         #mujeres{
             font-size: 1px;
-            background-image: url(../images/Mujer\ modelo.webp);
+            background-image: $imgMainCategoriaMujer ;
             background-position: right top;
             background-repeat: no-repeat;
             background-size: cover;   
             box-shadow: 0 1px 10px rgb(0, 0, 0);
-            // &:hover{
-            //     bac: blur(2px);
-            // }
             }
         #hombres{
                     
-            background-image: url(../images/Hombre\ modelo.webp);
+             background-image: $imgMainCategoriaHombre ;
             background-position: right top;
             background-repeat: no-repeat;
             background-size: cover;
             box-shadow: 0 1px 10px rgb(0, 0, 0);
             }
         #ninos{
-            background-image: url(../images/Nino\ modelo.rec.jpg);
+            background-image: $imgMainCategoriaNino;
             background-position: right top;
             background-size: cover;
             z-index: 50;
@@ -76,6 +74,8 @@
             background: linear-gradient(0deg, rgba(255,204,16,1) 0%, rgba(255,255,255,0.41) 9%);
             font-size: 90px;
         }
+        
+        
     }
     
     

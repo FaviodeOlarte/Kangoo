@@ -1,0 +1,14 @@
+
+    body{
+        &::-webkit-scrollbar{
+            width: 12px !important;
+            background-color: rgba(128, 128, 128, 0.173);
+            padding: 5px;
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius: 5px !important;
+        background-color: $focusAmarilloHeader !important;
+        border: .5px solid rgb(168, 132, 40);
+        }
+        
+    }

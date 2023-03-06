@@ -7,7 +7,7 @@
 .body2{
     width: 98vw;
     height: 98vh !important;
-    background-image: url(../logo/BGCanguros.webp);
+    background-image: $bgIniciarSeccion;
     background-size:cover ;
     background-repeat: no-repeat;
     background-position: center top;
@@ -138,8 +138,8 @@
             padding: 40px 50px;
             border-radius: 20px;
             background-color: rgba(207, 214, 219, 0.226);
-            box-shadow: 0 15px 25px rgb(0, 0, 0, .5),
-                        0 0 35px rgb(0, 0, 0, .5);
+            box-shadow: 0 15px 25px rgb(0, 0, 0),
+                        0 0 35px rgb(0, 0, 0);
             
         }
     }
@@ -153,8 +153,8 @@
         padding-left: 40px;
         border-radius: 20px;
         background-color: rgba(207, 214, 219, 0.331);
-        box-shadow: 0 15px 25px rgb(0, 0, 0, .5),
-                    0 0 35px rgb(0, 0, 0, .5);
+        box-shadow: 0 15px 25px rgb(0, 0, 0),
+                    0 0 35px rgb(0, 0, 0);
         }
 }
 
