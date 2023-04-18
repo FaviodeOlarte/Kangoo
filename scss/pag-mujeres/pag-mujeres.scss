@@ -50,12 +50,28 @@
          
 
 .hover:hover{
-    list-style:disc;
+    // list-style:disc;
+    color: rgb(255,204,16) !important;
+}
+.hoverActivo{
+    // list-style:disc;
     color: rgb(255,204,16) !important;
 }
 
-   
-        
+.lista{
     
+
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2 ease-in-out;
     
-        
+}
+.listaActiva{
+    
+
+        max-height: 100%;
+        margin-bottom: 16px;
+    
+}
+
+  

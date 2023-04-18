@@ -42,7 +42,7 @@
                             <form id="busqueda"  class="d-flex" role="search">
                                 <label for="buscar"> </label>
                                 <input type="search" name="" id="buscar" placeholder="Buscar"  style="width: 90%;border-radius: 10px;border: 1px solid rgba(125, 107, 60, 0.945); padding: 2px 12px;">
-                                <button class="btn btn-outline-secondary mx-1" type="submit">
+                                <button id="buscarLogo" class="btn btn-outline-secondary mx-1" type="submit">
                                         <img src="./logo/Iconos adiccionales/Buscar.svg" alt="Kangoo"  height="24px"  />
                                 </button>
                             </form>
@@ -104,16 +104,16 @@
         </a></section>
             <div class="col-12 p-0 col-xl-7 col-lg-7  col-md-7 ">
                 <section id="genero">
-                    <div id="mujeres" class="w-100">
+                    <div id="mujer" class="w-100 catSexo" >
                         <a class="dropdown-item" href="./pages/pag-mujeres.html">
                             <button class="d-flex align-items-end boton ">Mujeres</button>
                         </a>
                     </div>      
-                    <div id="hombres" class="w-100">
+                    <div id="hombre" class="w-100  catSexo">
                         <a class="dropdown-item"  href="./pages/pag-hombres.html">
                             <button class="d-flex align-items-end boton">Hombres</button>
                         </a></div>
-                    <div id="ninos" class="w-100">
+                    <div id="ninos" class="w-100  catSexo">
                         <a class="dropdown-item"  href="./pages/pag-ninos.html">
                             <button class="d-flex align-items-end boton">Niños</button>
                         </a></div>
@@ -151,9 +151,10 @@
 
 
 
-
+    
+    <script src="./js/script.js"></script>
 <!-- Scrip de boostrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
+    
 </body>
 </html>
