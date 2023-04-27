@@ -12,7 +12,7 @@ productos=[
         descripcion: 'Pack de 2 camisetas blanca y marron con escote bordado.',
         stock: 10,
         precio: 3000,
-        imgCard: "../images/Ropa mujer/camiseta pack 2.webp",
+        imgCard: "images/Ropa mujer/camiseta pack 2.webp",
         prodcutoLink:""
     },
     {   id:2,
@@ -24,7 +24,7 @@ productos=[
         descripcion: "Campera de algodon rosada con capucha.",
         stock: 6,
         precio: 2499,
-        imgCard:"../images/Ropa mujer/Campera rosada2ff.jpg",
+        imgCard:"images/Ropa mujer/Campera rosada2ff.jpg",
         prodcutoLink:"pages/pag-capera-detalle.html"
         
     },
@@ -37,7 +37,7 @@ productos=[
         descripcion: "Campera de algodon rosada",
         stock: 2,
         precio: 3000,
-        imgCard: "../images/Ropa mujer/Campera.webp",
+        imgCard: "images/Ropa mujer/Campera.webp",
         prodcutoLink:""
     },
     {   id:4,
@@ -49,7 +49,7 @@ productos=[
         descripcion: "Falda de cuero vegano estilo cuadriculado gama beig y blanca",
         stock: 3 ,
         precio: 1899,
-        imgCard:"../images/Ropa mujer/falda.webp",
+        imgCard:"images/Ropa mujer/falda.webp",
         prodcutoLink:""
     },
     {   id:5,
@@ -61,7 +61,7 @@ productos=[
         descripcion: "Jean de tido corto con terminacion acampanado tipo Oxford",
         stock: 12,
         precio: 1600,
-        imgCard:"../images/Ropa mujer/Jeans.webp",
+        imgCard:"images/Ropa mujer/Jeans.webp",
         prodcutoLink:""
     },
     {   id:6,
@@ -73,7 +73,7 @@ productos=[
         descripcion: "Campera de algodon cuello redondo",
         stock: 6,
         precio: 1899,
-        imgCard:"../images/Ropa mujer/Sweter.webp",
+        imgCard:"images/Ropa mujer/Sweter.webp",
         prodcutoLink:""
     },
     {   id:7,
@@ -85,7 +85,7 @@ productos=[
         descripcion: "Campera deportiva corderito hollister, con capucha.",
         stock: 7,
         precio: 6500,
-        imgCard:"../images/Ropa hombre/Campera.webp",
+        imgCard:"images/Ropa hombre/Campera.webp",
         prodcutoLink:""
     },
     {   id: 8 ,
@@ -97,7 +97,7 @@ productos=[
         descripcion: "Campera deportiva Hollister con capucha estilo 2 colores en dregadado. ",
         stock: 3,
         precio: 3499,
-        imgCard:"../images/Ropa hombre/2000001.1.webp",
+        imgCard:"images/Ropa hombre/2000001.1.webp",
         prodcutoLink:"../pages/pag-detalle-2000001.html"
     },
     {   id:9,
@@ -109,7 +109,7 @@ productos=[
         descripcion: "Remera manga larga Hollister tiro redondo, estilo 2 colores en dregadado.",
         stock: 8,
         precio: 1499,
-        imgCard:"../images/Ropa hombre/2000002.webp",
+        imgCard:"images/Ropa hombre/2000002.webp",
         prodcutoLink:"../pages/pag-detalle-2000002.html"
     },
     {   id:10,
@@ -121,7 +121,7 @@ productos=[
         descripcion: "Kit de algodon deportivo, campera de cuello redondo y short",
         stock: 2 ,
         precio: 7299,
-        imgCard: "../images/Ropa hombre/Kit campera pantalon deportivo.webp",
+        imgCard: "images/Ropa hombre/Kit campera pantalon deportivo.webp",
         prodcutoLink:""
     },
     {   id:11,
@@ -133,7 +133,7 @@ productos=[
         descripcion: "Short de baño tiro corto estilo dino surf",
         stock:  15,
         precio: 1899,
-        imgCard: "../images/Ropa hombre/Short baño.webp",
+        imgCard: "images/Ropa hombre/Short baño.webp",
         prodcutoLink:""
     },
     {   id:12,
@@ -145,7 +145,7 @@ productos=[
         descripcion: " Bermuda tipo gastada de jeans tiro corto.",
         stock:  8,
         precio: 2600,
-        imgCard: "../images/Ropa hombre/Short hombre.webp",
+        imgCard: "images/Ropa hombre/Short hombre.webp",
         prodcutoLink:""
     },
     {   id:13,
@@ -157,7 +157,7 @@ productos=[
         descripcion: "Pantalon jeans elastico tiro largo ",
         stock:  16,
         precio: 2749,
-        imgCard: "../images/Ropa ninos/3000001.webp",
+        imgCard: "images/Ropa ninos/3000001.webp",
         prodcutoLink:"../pages/pag-detalle-3000001.html"
     },
     {   id:14,
@@ -169,7 +169,7 @@ productos=[
         descripcion: "Short de jeans tiro corto",
         stock:  8,
         precio: 1499,
-        imgCard: "../images/Ropa ninos/3000002.webp",
+        imgCard: "images/Ropa ninos/3000002.webp",
         prodcutoLink:"../pages/pag-detalle-3000002.html"
     },
     {   id:15,
@@ -181,7 +181,7 @@ productos=[
         descripcion: "Vestido sin mangas con tirantes",
         stock:  3,
         precio: 499,
-        imgCard: "../images/Ropa ninos/3000006.webp",
+        imgCard: "images/Ropa ninos/3000006.webp",
         prodcutoLink:"../pages/pag-detalle-2000002.html"
     },
     {   id:16,
@@ -193,7 +193,7 @@ productos=[
         descripcion: "Remera Mickey Mouse surf cuello redonde de niño/niña",
         stock:  10,
         precio: 299,
-        imgCard: "../images/Ropa ninos/3000003.webp",
+        imgCard: "images/Ropa ninos/3000003.webp",
         prodcutoLink:""
     },
     {   id:17,
@@ -205,7 +205,7 @@ productos=[
         descripcion: "Remera estampada de cuellos redondo tipo jering",
         stock:  42,
         precio: 399,
-        imgCard: "../images/Ropa ninos/3000004.webp",
+        imgCard: "images/Ropa ninos/3000004.webp",
         prodcutoLink:""
     },
     {   id:18,
@@ -217,7 +217,7 @@ productos=[
         descripcion: "Remera estampada de cuellos redondo tipo jering",
         stock:  25,
         precio: 399,
-        imgCard: "../images/Ropa ninos/3000005.webp",
+        imgCard: "images/Ropa ninos/3000005.webp",
         prodcutoLink:""
     }
 ]
