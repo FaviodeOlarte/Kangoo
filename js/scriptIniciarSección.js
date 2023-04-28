@@ -10,18 +10,49 @@ let usuarios= JSON.parse(usuarioJSON)
 
  iniciarSeccion.addEventListener('click', ()=>{
     if (!usuario.value){
-        alert("Por favor ingresar correo")
+        toastySeccion("Por favor ingresar correo electrónico  ","ToastyInputUser","rgb(236, 186, 57)")
     }else if(usuario.value){
         let correoExist = usuarios.find(u=>u.userEmail===usuario.value && u.userPassword===contrasenia.value)
         if(correoExist){
+            sweetUserOk(`Bienvenido ${usuario.value.toUpperCase()}`)
+            // Swal.fire({
+            //     position: 'center',
+            //     icon: 'success',
+            //     title: `Bienvenido ${usuario.value.toUpperCase()}`,
+            //     showConfirmButton: false,
+            //     customClass:{
+            //         container:"fondoPopup",
+            //         popup:"popupGlass",
+            //     },
+            //     timer: 2500,
+            //     showClass:{
+            //         popup:'animate__animated animate__zoomInDown'
+            //     }
+            //   })
 
-            alert("Bienvenido " + usuario.value )
-        } else { alert("Usuario o contraseña incorrecta")}
+        } else { 
+            
+            toastySeccion("Usuario o contraseña incorrecta  ","ToastyError","#FF6262")
+        }
 
      }
 
  })
 
+ function toastySeccion(text,className,background){
+    Toastify({
+        text,
+        duration: 2500,
+        close:true,
+        gravity:"top",
+        position:"center",
+        stopOnFocus:true,
+        className,
+        style: {
+            background,
+          }
+    }).showToast()
+ }
 
 
 //  -----------------------
@@ -67,13 +98,18 @@ registrarse.addEventListener("click",()=>{
             
                         usuarios.push({userNombre,userApellido,userEmail,userPassword})
                         localStorage.setItem("usuarios",JSON.stringify(usuarios))
-                        alert(`Bienvenido  ${userNombre}, su usuario se ah creado correctamente`)
+                        sweetUserOk(`Bienvenido  ${userNombre.toUpperCase()}, su usuario se ah creado correctamente`)
+                        // alert(`Bienvenido  ${userNombre}, su usuario se ah creado correctamente`)
                         girarTarjeta()
                     }else(alert("Correo existente"))
 
-        }else { alert("Las conrtaseñas ingresadas no coinciden")}
-
-    }else{alert("Es obligatorio completar todos los campos")}
+        }else { 
+            toastySeccion("Las conrtaseñas ingresadas no coinciden  ","ToastyError","#FF6262")
+        }
+        
+    }else{
+        toastySeccion("Es obligatorio completar todos los campos  ","ToastyError","#FF6262")
+}
 })
 
 
@@ -111,3 +147,21 @@ passwordCheck.addEventListener("change", ()=>{
 }
 
 })
+
+
+function sweetUserOk(title){
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title,
+        showConfirmButton: false,
+        customClass:{
+            container:"fondoPopup",
+            popup:"popupGlass",
+        },
+        timer: 2700,
+        showClass:{
+            popup:'animate__animated animate__zoomInDown'
+        }
+      })
+}
