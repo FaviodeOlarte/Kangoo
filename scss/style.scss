@@ -22,6 +22,16 @@
    
 }
 
+
+.ocultar {
+    opacity: 0;
+    display: none !important;
+    visibility: hidden;
+  }
+  .mostrar{
+    opacity: 1 !important;
+  }
+
 @media (max-width:1400px){
     #categorias{
         li{
