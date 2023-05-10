@@ -1,7 +1,35 @@
 let contenedorProductos = document.getElementById("contenedorProductos");
 let catSexo = localStorage.getItem("catSexo");
-let arrayProductosCatSexo = productos;
 let filtro = document.querySelectorAll(".verTodoCatSexo");
+let arrayProductosCatSexo = [];
+let productos = [];
+
+function configArrayProductos(productosJSON) {
+  productos = productosJSON;
+  renderizarConCatSexo();
+}
+
+// ------------------FETCH -----------------
+
+fetch("../js/productos.json")
+  .then((respuesta) => respuesta.json())
+  .then((productosJSON) => {
+    configArrayProductos(productosJSON);
+  });
+
+function renderizarConCatSexo() {
+  catSexo = localStorage.getItem("catSexo");
+  if (catSexo) {
+    arrayProductosCatSexo = productos.filter(
+      (p) => p.catSexo.toLowerCase() === catSexo.toLocaleLowerCase()
+    );
+  } else {
+    arrayProductosCatSexo = productos;
+  }
+  renderizarCards(arrayProductosCatSexo);
+}
+
+// ------------------fIN FETCH -----------------
 
 a();
 
@@ -26,11 +54,6 @@ for (let i = 0; i < filtro.length; i++) {
     }
     a();
   });
-  catSexo = localStorage.getItem("catSexo");
-  arrayProductosCatSexo = productos.filter(
-    (p) => p.catSexo.toLowerCase() === catSexo.toLocaleLowerCase()
-  );
-  renderizarCards(arrayProductosCatSexo);
 }
 
 function a() {
@@ -80,8 +103,6 @@ renderizarCards(arrayProductosCatSexo);
 
 let urlParams = new URLSearchParams(window.location.search);
 let cadenaDeBusqueda = urlParams.get("busqueda");
-console.log(urlParams);
-console.log(cadenaDeBusqueda);
 if (cadenaDeBusqueda) {
   let arrayFiltradoBusqueda = productos.filter((p) =>
     p.nombre.toLowerCase().includes(cadenaDeBusqueda.toLowerCase())
@@ -104,10 +125,11 @@ let buscador = document.getElementById("buscar");
 buscador.addEventListener("input", busqueda);
 
 function busqueda() {
-  let arrayFiltrado = productos.filter((producto) =>
+  let arrayFiltrado = arrayProductosCatSexo.filter((producto) =>
     producto.nombre.toLowerCase().includes(buscador.value.toLowerCase())
   );
   let arrayFiltradoBusqueda = Object.keys(arrayFiltrado).length;
+
   if (arrayFiltradoBusqueda > 0) {
     if (catSexo) {
       let arrayFiltradoCatSexo = arrayFiltrado.filter(
@@ -118,8 +140,16 @@ function busqueda() {
       renderizarCards(arrayFiltrado);
     }
   } else {
+    let mensajeErrorBusquedaCat = "";
+    let msgCatSexo = "";
+    if (catSexo) {
+      catSexo == "nino" ? (msgCatSexo = "niño") : (msgCatSexo = catSexo);
+      mensajeErrorBusquedaCat = `${buscador.value.toUpperCase()} no existe para la categoría "${msgCatSexo.toLocaleUpperCase()}"`;
+    } else {
+      mensajeErrorBusquedaCat = `${buscador.value.toUpperCase()} no existe`;
+    }
     Toastify({
-      text: "No existen productos que coincidan con su busqueda",
+      text: mensajeErrorBusquedaCat,
       duration: 1600,
       gravity: "top",
       position: "right",
